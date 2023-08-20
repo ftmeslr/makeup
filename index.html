@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/dist/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   </head>
   <body dir="rtl">
     <header
@@ -472,6 +477,26 @@
           شما شایسته ی بهترین ها هستید
         </p>
       </div>
+      <div class="swiper_horizontail swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="./src/images/g2.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./src/images/g1.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./src/images/g1.png" alt="" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
     </section>
     <section class="container py-12 m-auto">
       <div class="grid xl:grid-cols-2 gap-4 grid-cols">
@@ -484,14 +509,55 @@
           </p>
           <a href="#"> _نظرات و پیشنهادات خود را برای ما ارسال کنید </a>
         </div>
-        <div class="bg-[#7d5a4a] rounded-2xl p-4 h-24">
-          <p>
-            مادر من هم مشتری شماست و برای جشن سال نو ناخن های بسیار زیبایی
-            داشت.رنگ بندی شما بی نظیر است.”
-          </p>
+        <!-- Slider main container -->
+        <div class="swiper_vertical swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide py-5 px-6">
+              <div
+                class="bg-[#7d5a4a] rounded-2xl p-4 h-full px-10 flex items-center justify-center"
+              >
+                <p class="text-white font-bold text-xl text-center">
+                  مادر من هم مشتری شماست و برای جشن سال نو ناخن های بسیار زیبایی
+                  داشت.رنگ بندی شما بی نظیر است.”
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide p-5 px-6">
+              <div
+                class="bg-[#7d5a4a] rounded-2xl p-4 h-full px-10 flex items-center justify-center"
+              >
+                <p class="text-white font-bold text-xl text-center">
+                  مادر من هم مشتری شماست و برای جشن سال نو ناخن های بسیار زیبایی
+                  داشت.رنگ بندی شما بی نظیر است.” داشت.رنگ بندی شما بی نظیر
+                  است.” داشت.رنگ بندی شما بی نظیر است.”
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide p-5 px-6">
+              <div
+                class="bg-[#7d5a4a] rounded-2xl p-4 px-10 h-full px-10 flex items-center justify-center"
+              >
+                <p class="text-white font-bold text-xl text-center">
+                  مادر من هم مشتری شماست و برای جشن سال نو ناخن های بسیار زیبایی
+                  داشت.رنگ بندی شما بی نظیر است.” داشت.رنگ بندی شما بی نظیر
+                  است.” داشت.رنگ بندی شما بی نظیر داشت.رنگ بندی شما بی نظیر
+                  است.” داشت.رنگ بندی شما بی نظیر
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
       </div>
     </section>
+
     <footer class="container w-full bg-[#7d5a4a] m-auto rounded-3xl p-4">
       <div class="flex flex-col items-center justify-center">
         <div><img src="./src/images/footer-logo.png" alt="" /></div>
@@ -550,5 +616,6 @@
         </div>
       </div>
     </footer>
+    <script src="./main.js"></script>
   </body>
 </html>
