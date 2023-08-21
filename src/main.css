@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "iranSans";
+  font-style: normal;
+  font-weight: 200;
+  src: url("../src/fonts/Sans4fran3.eot") format("eot"),
+    url("../src/fonts/Sans4fran3.ttf") format("ttf"),
+    url("../src/fonts/Sansa4fran3.woff") format("woff");
+}
+
+body {
+  font-family: "iranSans", sans-serif;
+}
 .swiper {
   /* width: 600px; */
   height: 300px;
