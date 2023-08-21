@@ -144,7 +144,13 @@
     </div>
 
     <div class="grid lg:grid-cols-3 grid-cols-1 gap-4 container m-auto mb-8">
-      <div class="lg:col-span-2 bg-slate-500 rounded-2xl">04</div>
+      <div class="lg:col-span-2 rounded-2xl">
+        <img
+          class="rounded-2xl"
+          src="./src/images/map-nail-1-1536x624.jpg"
+          alt="map"
+        />
+      </div>
 
       <div class="bg-[#7d5a4a] p-10 rounded-2xl">
         <p class="text-center text-white">با ما در ارتباط باشید</p>
@@ -159,7 +165,7 @@
                 نام شما
               </label>
               <input
-                class="rounded-3xl appearance-none block w-full bg-gray-200 text-gray-50 border border-red-500 py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                class="rounded-3xl appearance-none block w-full bg-gray-200 text-black border border-red-500 py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                 id="grid-first-name"
                 type="text"
                 placeholder="نام شما"
@@ -173,7 +179,7 @@
                 شماره تماس
               </label>
               <input
-                class="rounded-3xl appearance-none block w-full bg-gray-200 text-gray-50 border border-gray-200 py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                class="rounded-3xl appearance-none block w-full bg-gray-200 text-black border border-gray-200 py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                 id="grid-phone-number"
                 type="text"
                 placeholder="09392162958"
@@ -190,7 +196,7 @@
                 موضوع
               </label>
               <input
-                class="appearance-none block w-full bg-gray-200 text-gray-50 border border-gray-200 rounded-3xl py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                class="appearance-none block w-full bg-gray-200 text-black border border-gray-200 rounded-3xl py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                 id="grid-city"
                 type="text"
                 placeholder="موضوع"
@@ -228,8 +234,25 @@
               </div>
             </div>
           </div>
+
+          <div class="flex flex-wrap -mx-3 mb-2">
+            <div class="w-full md:w-full px-3 mb-6 md:mb-0">
+              <label
+                class="block uppercase tracking-wide text-gray-50 text-xs font-bold mb-2"
+                for="grid-city"
+              >
+                پیام شما
+              </label>
+              <textarea
+                class="text-black appearance-none block w-full bg-gray-200 border border-gray-200 rounded-3xl py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                id="grid-city"
+                type="text"
+                placeholder="پیام شما"
+              ></textarea>
+            </div>
+          </div>
           <button
-            class="border-solid rounded-3xl border-current bg-orange-100 p-2 px-3 my-4 text-bold w-56 mt-5"
+            class="border-solid rounded-3xl border-current bg-orange-100 py-2 my-4 text-bold w-32 mt-5"
           >
             ارسال
           </button>
